@@ -3,9 +3,9 @@
     <head>
         <!-- Title and Icon -->
 
-        <title>MiroTalk WebRTC Video call, Chat Room & Screen Sharing.</title>
-        <link rel="shortcut icon" href="../images/logo.svg" />
-        <link rel="apple-touch-icon" href="../images/logo.svg" />
+        <title>Cloud Office 10</title>
+        <link rel="shortcut icon" href="../images/favicon.png" />
+        <link rel="apple-touch-icon" href="../images/favicon.png" />
 
         <!-- Meta Information -->
 
@@ -58,7 +58,7 @@
     </head>
 
     <body onload="initClientPeer()">
-        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <noscript>Debe habilitar JavaScript para ejecutar esta aplicación.</noscript>
 
         <!-- just 4SEO Optimization -->
 
@@ -69,11 +69,11 @@
         <!-- show this before to join -->
 
         <div id="loadingDiv" class="center pulsate">
-            <h1>Loading</h1>
+            <h1>Cargando</h1>
             <img src="../images/loading.gif" style="width: 400px" />
             <pre>
-Please allow the camera or microphone
-access to use this app.
+                Por favor permita que la cámara o el micrófono
+                acceso para utilizar esta aplicación.
             </pre>
         </div>
 
@@ -191,7 +191,7 @@ access to use this app.
             <section id="msgerCP" class="center fadein">
                 <section id="msgerCPSec" class="msger">
                     <header id="msgerCPHeader" class="msger-private-header">
-                        <div class="msger-header-title"><i class="fas fa-comment-alt"></i> Send Private messages</div>
+                        <div class="msger-header-title"><i class="fas fa-comment-alt"></i> Enviar mensajes privados</div>
                         <div class="msger-header-options">
                             <button id="msgerCPCloseBtn" class="fas fa-times"></button>
                         </div>
@@ -201,9 +201,9 @@ access to use this app.
                             <input
                                 id="searchPeerBarName"
                                 type="text"
-                                placeholder=" 🔍 Search peer by name..."
+                                placeholder=" 🔍 Buscar por nombre..."
                                 maxlength="32"
-                                name="search"
+                                name="Buscar"
                                 onkeyup="searchPeer()"
                             />
                         </div>
@@ -240,8 +240,8 @@ access to use this app.
                     <button id="speechRecognitionIcon" class="fas fa-microphone-alt"></button>
                     <select id="recognitionLanguage"></select>
                     <select id="recognitionDialect"></select>
-                    <button id="speechRecognitionStart" class="fas fa-play">&nbsp;Start</button>
-                    <button id="speechRecognitionStop" class="fas fa-stop">&nbsp;Stop</button>
+                    <button id="speechRecognitionStart" class="fas fa-play">&nbsp;Iniciar</button>
+                    <button id="speechRecognitionStop" class="fas fa-stop">&nbsp;Detener</button>
                 </div>
             </section>
         </section>
@@ -257,7 +257,7 @@ access to use this app.
             <main class="mySettingsMain">
                 <div class="tab">
                     <button id="tabRoomBtn" class="fas fa-home tablinks">
-                        <p class="tabButtonText">Room</p>
+                        <p class="tabButtonText">Sala</p>
                     </button>
                     <button id="tabVideoBtn" class="fas fa-video tablinks">
                         <p class="tabButtonText">Video</p>
@@ -266,16 +266,16 @@ access to use this app.
                         <p class="tabButtonText">Audio</p>
                     </button>
                     <button id="tabParticipantsBtn" class="fa-solid fa-users tablinks">
-                        <p class="tabButtonText">Participants</p>
+                        <p class="tabButtonText">Participantes</p>
                     </button>
                     <button id="tabProfileBtn" class="fa-solid fa-user tablinks">
-                        <p class="tabButtonText">Profile</p>
+                        <p class="tabButtonText">Perfil</p>
                     </button>
                     <button id="tabStylingBtn" class="fas fa-palette tablinks">
-                        <p class="tabButtonText">Style</p>
+                        <p class="tabButtonText">Estilo</p>
                     </button>
                     <button id="tabLanguagesBtn" class="fas fa-globe tablinks">
-                        <p class="tabButtonText">Language</p>
+                        <p class="tabButtonText">Lenguaje</p>
                     </button>
                 </div>
 
@@ -295,12 +295,12 @@ access to use this app.
                             </tr>
                         </table>
                         <button id="roomSendEmailBtn">
-                            <i class="fas fa-envelope-circle-check"></i>&nbsp;Send email invitation
+                            <i class="fas fa-envelope-circle-check"></i>&nbsp;Enviar invitación por correo electrónico
                         </button>
                         <br />
                         <div id="tabRoomSecurity">
-                            <button id="lockRoomBtn"><i class="fas fa-lock-open"></i>&nbsp;Lock room</button>
-                            <button id="unlockRoomBtn"><i class="fas fa-lock"></i>&nbsp;Unlock room</button>
+                            <button id="lockRoomBtn"><i class="fas fa-lock-open"></i>&nbsp;Bloquear sala</button>
+                            <button id="unlockRoomBtn"><i class="fas fa-lock"></i>&nbsp;Desbloquear sala</button>
                             <br />
                         </div>
                         <br />
@@ -309,7 +309,7 @@ access to use this app.
                                 <td class="width-120">
                                     <div class="title">
                                         <i class="fas fa-microphone-lines"></i>
-                                        <p>Volume bar</p>
+                                        <p>Barra de volumen</p>
                                     </div>
                                 </td>
                                 <td><input id="switchAudioPitchBar" class="toggle" type="checkbox" checked /></td>
@@ -318,7 +318,7 @@ access to use this app.
                                 <td class="width-120">
                                     <div class="title">
                                         <i class="fas fa-music"></i>
-                                        <p>Sounds</p>
+                                        <p>Sonidos</p>
                                     </div>
                                 </td>
                                 <td><input id="switchSounds" class="toggle" type="checkbox" checked /></td>
@@ -327,7 +327,7 @@ access to use this app.
                                 <td class="width-120">
                                     <div class="title">
                                         <i class="fas fa-share-alt"></i>
-                                        <p>Share</p>
+                                        <p>Compartir</p>
                                     </div>
                                 </td>
                                 <td><input id="switchShare" class="toggle" type="checkbox" checked /></td>
@@ -340,7 +340,7 @@ access to use this app.
                         <div>
                             <div class="title">
                                 <i class="fas fa-video"></i>
-                                <p>Video Source</p>
+                                <p>Fuente de video</p>
                             </div>
                             <br />
                             <select id="videoSource"></select>
@@ -348,11 +348,11 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fas fa-palette"></i>
-                            <p>Video Quality</p>
+                            <p>Calidad de video</p>
                         </div>
                         <br />
                         <select id="videoQuality">
-                            <option value="default">Default</option>
+                            <option value="default">Predeterminado</option>
                             <option value="qvgaVideo">QVGA</option>
                             <option value="vgaVideo">VGA</option>
                             <option value="hdVideo">HD</option>
@@ -363,48 +363,48 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-film"></i>
-                            <p>Video fit</p>
+                            <p>Ajuste de vídeo</p>
                         </div>
                         <br />
                         <select id="videoObjFitSelect">
-                            <option value="fill">Fill</option>
-                            <option value="contain">Contain</option>
-                            <option value="cover">Cover</option>
-                            <option value="scale-down">Scale-down</option>
-                            <option value="none">None</option>
+                            <option value="fill">Llenar</option>
+                            <option value="contain">Contenerse</option>
+                            <option value="cover">Portada</option>
+                            <option value="scale-down">Reducir</option>
+                            <option value="none">Ninguno</option>
                         </select>
                         <div id="videoFpsDiv">
                             <br />
                             <div class="title">
                                 <i class="fa-solid fa-camera"></i>
-                                <p>Camera FPS</p>
+                                <p>FPS de la cámara</p>
                             </div>
                             <br />
                             <select id="videoFps">
-                                <option value="60">60 - frame-per-second</option>
-                                <option value="30">30 - frame-per-second</option>
-                                <option value="25">25 - frame-per-second</option>
-                                <option value="20">20 - frame-per-second</option>
-                                <option value="15">15 - frame-per-second</option>
-                                <option value="10">10 - frame-per-second</option>
-                                <option value="5">5 - frame-per-second</option>
+                                <option value="60">60 - Fotograma por segundo</option>
+                                <option value="30">30 - Fotograma por segundo</option>
+                                <option value="25">25 - Fotograma por segundo</option>
+                                <option value="20">20 - Fotograma por segundo</option>
+                                <option value="15">15 - Fotograma por segundo</option>
+                                <option value="10">10 - Fotograma por segundo</option>
+                                <option value="5">5 - Fotograma por segundo</option>
                             </select>
                         </div>
                         <div id="screenFpsDiv">
                             <br />
                             <div class="title">
                                 <i class="fa-solid fa-desktop"></i>
-                                <p>Screen FPS</p>
+                                <p>FPS de pantalla</p>
                             </div>
                             <br />
                             <select id="screenFps">
-                                <option value="60">60 - frame-per-second</option>
-                                <option value="30">30 - frame-per-second</option>
-                                <option value="25">25 - frame-per-second</option>
-                                <option value="20">20 - frame-per-second</option>
-                                <option value="15">15 - frame-per-second</option>
-                                <option value="10">10 - frame-per-second</option>
-                                <option value="5">5 - frame-per-second</option>
+                                <option value="60">60 - Fotograma por segundo</option>
+                                <option value="30">30 - Fotograma por segundo</option>
+                                <option value="25">25 - Fotograma por segundo</option>
+                                <option value="20">20 - Fotograma por segundo</option>
+                                <option value="15">15 - Fotograma por segundo</option>
+                                <option value="10">10 - Fotograma por segundo</option>
+                                <option value="5">5 - Fotograma por segundo</option>
                             </select>
                         </div>
                     </div>
@@ -414,7 +414,7 @@ access to use this app.
                         <div>
                             <div class="title">
                                 <i class="fas fa-microphone"></i>
-                                <p>Microphone</p>
+                                <p>Micrófono</p>
                             </div>
                             <br />
                             <select id="audioSource"></select>
@@ -436,13 +436,13 @@ access to use this app.
                         <div id="audioOutputDiv">
                             <div class="title">
                                 <i class="fas fa-headphones"></i>
-                                <p>Speaker</p>
+                                <p>Altavoz</p>
                             </div>
                             <br />
                             <select id="audioOutput"></select>
                             <button id="speakerTestBtn" class="buttons">
                                 <i class="fa-solid fa-circle-play"></i>
-                                <p>Test speaker</p>
+                                <p>Prueba de altavoz</p>
                             </button>
                             <br /><br /><br /><br /><br />
                         </div>
@@ -451,7 +451,7 @@ access to use this app.
                                 <td class="width-120">
                                     <div class="title">
                                         <i class="fa-solid fa-hand-pointer"></i>
-                                        <p>Push to talk</p>
+                                        <p>Pulsar para hablar</p>
                                     </div>
                                 </td>
                                 <td><input id="switchPushToTalk" class="toggle" type="checkbox" /></td>
@@ -468,10 +468,10 @@ access to use this app.
                         <br />
                         <div id="tabRoomParticipants">
                             <br />
-                            <button id="muteEveryoneBtn"><i class="fas fa-microphone"></i>&nbsp;Mute everyone</button>
-                            <button id="hideEveryoneBtn"><i class="fas fa-video"></i>&nbsp;Hide everyone</button>
+                            <button id="muteEveryoneBtn"><i class="fas fa-microphone"></i>&nbsp;Silenciar a todos</button>
+                            <button id="hideEveryoneBtn"><i class="fas fa-video"></i>&nbsp;Ocultar a todos</button>
                             <button id="ejectEveryoneBtn">
-                                <i class="fas fa-right-from-bracket"></i>&nbsp;Eject everyone
+                                <i class="fas fa-right-from-bracket"></i>&nbsp;Expulsar a todos
                             </button>
                         </div>
                     </div>
@@ -484,18 +484,18 @@ access to use this app.
                             <br />
                             <div class="title">
                                 <i class="fas fa-user"></i>
-                                <p>Name</p>
+                                <p>Nombre</p>
                             </div>
                             <br /><br />
                             <div>
                                 <input id="myPeerNameSet" type="text" placeholder="Change name..." maxlength="32" />
-                                <button id="myPeerNameSetBtn"><i class="fas fa-user-edit"></i>&nbsp;Change name</button>
+                                <button id="myPeerNameSetBtn"><i class="fas fa-user-edit"></i>&nbsp;Cambiar nombre</button>
                             </div>
                         </div>
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-user-shield"></i>
-                            <p>Presenter:</p>
+                            <p>Presentador:</p>
                             <p id="isPeerPresenter">true</p>
                         </div>
                     </div>
@@ -504,15 +504,15 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-palette"></i>
-                            <p>Theme</p>
+                            <p>Tema</p>
                         </div>
                         <br />
                         <select id="mirotalkTheme">
-                            <option value="dark">⚫️ Dark</option>
-                            <option value="grey">⚪️ Grey</option>
-                            <option value="green">🟢 Green</option>
-                            <option value="blue">🔵 Blue</option>
-                            <option value="red">🔴 Red</option>
+                            <option value="dark">⚫️ Oscuro</option>
+                            <option value="grey">⚪️ Gris</option>
+                            <option value="green">🟢 Verde</option>
+                            <option value="blue">🔵 Azul</option>
+                            <option value="red">🔴 Rojo</option>
                         </select>
                         <br />
                         <div class="title">
@@ -528,13 +528,13 @@ access to use this app.
                         <div id="pinUnpinGridDiv">
                             <div class="title">
                                 <i class="fa-solid fa-map-pin"></i>
-                                <p>Pin video position</p>
+                                <p>Fijar posición del video</p>
                             </div>
                             <br />
                             <select id="pinVideoPositionSelect">
                                 <option value="vertical">Vertical</option>
                                 <option value="horizontal">Horizontal</option>
-                                <option value="top">Top</option>
+                                <option value="top">Parte superior</option>
                             </select>
                         </div>
                     </div>
@@ -543,7 +543,7 @@ access to use this app.
                         <br />
                         <div class="title">
                             <i class="fa-solid fa-language"></i>
-                            <p>Language</p>
+                            <p>Lenguaje</p>
                         </div>
                         <br />
                         <div id="google_translate_element"></div>
@@ -612,7 +612,7 @@ access to use this app.
             <div id="sendFileInfo"></div>
             <div id="sendFilePercentage"></div>
             <progress id="sendProgress" max="0" value="0"></progress>
-            <button id="sendAbortBtn"><i class="fas fa-stop-circle"></i>&nbsp; Abort</button>
+            <button id="sendAbortBtn"><i class="fas fa-stop-circle"></i>&nbsp; Abortar</button>
         </div>
 
         <!-- End File Send -->
@@ -624,7 +624,7 @@ access to use this app.
             <div id="receiveFileInfo"></div>
             <div id="receiveFilePercentage"></div>
             <progress id="receiveProgress" max="0" value="0"></progress>
-            <button id="receiveHideBtn"><i class="fas fa-eye-slash"></i>&nbsp; Hide</button>
+            <button id="receiveHideBtn"><i class="fas fa-eye-slash"></i>&nbsp; Ocultar</button>
         </div>
 
         <!-- Stop File Receive -->
@@ -638,7 +638,7 @@ access to use this app.
             <br />
             <iframe
                 id="videoUrlIframe"
-                title="Video Url Player"
+                title="Reproductor de video por URL"
                 src=""
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
